@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.001 s -- in be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat
+be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat skipped
+be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat skipped
+be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat skipped
+be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat skipped

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat" time="0.001" tests="4" errors="0" skipped="4" failures="0">
+  <properties/>
+  <testcase name="calculTotalProjetAchat_testNegativeValues" classname="be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat" time="0.0">
+    <skipped message="class be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat is @Disabled"/>
+  </testcase>
+  <testcase name="calculTotalProjetAchat_testLimitsValueWithArgs(double, double, double, double, double, double)" classname="be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat" time="0.0">
+    <skipped message="class be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat is @Disabled"/>
+  </testcase>
+  <testcase name="calculTotalProjetAchat_testPositifNomalValues" classname="be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat" time="0.0">
+    <skipped message="class be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat is @Disabled"/>
+  </testcase>
+  <testcase name="calculTotalProjetAchat_testExtremValues" classname="be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat" time="0.0">
+    <skipped message="class be.iramps.ue1103.Pret.ProjetTest$testCalculTotalProjetAchat is @Disabled"/>
+  </testcase>
+</testsuite>

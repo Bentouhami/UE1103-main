@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tests-unitaires</a> &gt; <a href="index.source.html" class="el_package">be.iramps.ue1103</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package be.iramps.ue1103;
+
+import java.util.Locale;
+
+import be.iramps.ue1103.Pret.Pret;
+import be.iramps.ue1103.Pret.Projet;
+
+<span class="nc" id="L8">public class Main {</span>
+    public static void main(String[] args) {
+        // Préparation pour le projet hypothécaire
+<span class="nc" id="L11">        Projet projet = new Projet();</span>
+<span class="nc" id="L12">        projet.setPrixHabitation(100_000.00);</span>
+<span class="nc" id="L13">        projet.setRevenuCadastral(700);</span>
+<span class="nc" id="L14">        projet.setFraisNotaireAchat(4_150); // Prix forfétaire pour un bien de 195.000,00 €. Varie selon le montant, bien entendu.</span>
+<span class="nc" id="L15">        projet.setFraisTransformation(60_000); </span>
+
+<span class="nc" id="L17">        double apportPersonnel = projet.calculApportMinimal(); // 24_110.00</span>
+<span class="nc" id="L18">        double montantEmprunt = projet.calculResteAEmprunter(); // 147_240.00</span>
+        
+        
+        // Résultat du projet:
+<span class="nc" id="L22">        System.out.println(String.format(Locale.FRENCH,&quot;Total projet:\t %(,11.2f EUR&quot;, projet.calculTotalProjetAchat())); </span>
+<span class="nc" id="L23">        System.out.println(String.format(Locale.FRENCH,&quot;\tApport personnel:\t %(,11.2f EUR&quot;, apportPersonnel));</span>
+<span class="nc" id="L24">        System.out.println(String.format(Locale.FRENCH,&quot;\tReste à emprunter:\t %(,11.2f EUR&quot;, montantEmprunt));</span>
+<span class="nc" id="L25">        System.out.println();</span>
+
+        // Préparation pour l'emprunt
+<span class="nc" id="L28">        Pret pret = new Pret();</span>
+<span class="nc" id="L29">        pret.setFraisDossierBancaire(500); // Prix forfétaire, varie.</span>
+<span class="nc" id="L30">        pret.setFraisNotaireCredit(5_475); // Une hypothèque induit un acte notarié. Prix forfétaire sur 195.000,00 €</span>
+<span class="nc" id="L31">        pret.setNombreAnnees(15);</span>
+<span class="nc" id="L32">        pret.setTauxAnnuel(0.04); // Moyenne en 2023</span>
+
+<span class="nc" id="L34">        double apportBancaire = pret.calculRestantDu(montantEmprunt);</span>
+
+<span class="nc" id="L36">        System.out.println(String.format(Locale.FRENCH,&quot;Total emprunt:\t %(,11.2f EUR&quot;, pret.calculTotalProjet(montantEmprunt)));</span>
+<span class="nc" id="L37">        System.out.println(String.format(Locale.FRENCH,&quot;\tMensualités:\t\t %(,11.2f EUR&quot;, pret.calculMensualites(montantEmprunt)));</span>
+<span class="nc" id="L38">        System.out.println(String.format(Locale.FRENCH,&quot;\tTotal des intérets:\t %(,11.2f EUR&quot;, pret.calculTotalInterets(montantEmprunt))); </span>
+<span class="nc" id="L39">        System.out.println(String.format(Locale.FRENCH,&quot;\tRestant dû:\t\t %(,11.2f EUR&quot;, apportBancaire));</span>
+<span class="nc" id="L40">        System.out.println();</span>
+        
+        // Apport personnel total
+<span class="nc" id="L43">        System.out.println(String.format(Locale.FRENCH,&quot;Apport personnel total: %(,11.2f EUR&quot;, apportBancaire + apportPersonnel));</span>
+
+<span class="nc" id="L45">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

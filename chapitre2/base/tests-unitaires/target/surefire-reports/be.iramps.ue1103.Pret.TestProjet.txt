@@ -1,0 +1,6 @@
+-------------------------------------------------------------------------------
+Test set: be.iramps.ue1103.Pret.TestProjet
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 s -- in be.iramps.ue1103.Pret.TestProjet
+be.iramps.ue1103.Pret.TestProjet skipped
+be.iramps.ue1103.Pret.TestProjet$TestCalculTVA skipped

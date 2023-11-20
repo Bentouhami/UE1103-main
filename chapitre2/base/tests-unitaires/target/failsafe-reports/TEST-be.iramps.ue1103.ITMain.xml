@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="be.iramps.ue1103.ITMain" time="0.014" tests="1" errors="0" skipped="1" failures="0">
+  <properties/>
+  <testcase name="happyPath" classname="be.iramps.ue1103.ITMain" time="0.0">
+    <skipped message="class be.iramps.ue1103.ITMain is @Disabled"/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: be.iramps.ue1103.Pret.ProjetTest$calculApportMinimal_normalPositifValues
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.001 s -- in be.iramps.ue1103.Pret.ProjetTest$calculApportMinimal_normalPositifValues
+be.iramps.ue1103.Pret.ProjetTest.testingGetters_Setters -- Time elapsed: 0.082 s
+be.iramps.ue1103.Pret.ProjetTest$calculApportMinimal_normalPositifValues skipped
+be.iramps.ue1103.Pret.ProjetTest$calculApportMinimal_normalPositifValues skipped
